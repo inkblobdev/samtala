@@ -12,6 +12,8 @@ Samtala is a toy project for now.
 - [ ] enable samtala core to do tcp hole punching to connect to the peers.
 - [ ] implement distributed persistance on samtala core.
 
+Innitialy I'll focus on get this zig core functionall afterwards a gui can be implemented.
+
 ## Features
 
 - Decentralized, peer-to-peer chatrooms
