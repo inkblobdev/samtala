@@ -1,43 +1,53 @@
 # Samtala
 
-Samtala is a decentralized, distributed chat application that creates peer-to-peer chatrooms with robust encryption for both in-transit and at-rest data.
+## Decentralized Communication Exploration
 
-## Notice
-Samtala is a toy project for now.
+Samtala (Swedish for "discourse") is an exploratory project aimed at learning about and potentially developing a decentralized, peer-to-peer communication platform. This project is in its very early stages and serves primarily as a learning experience in distributed systems, the Zig programming language, and related technologies.
 
-## Objectives
+### Project Status: Early Exploration
 
-- [ ] create a base network enabled zig executable(samtala core) that can transmit tcp messages.
-- [ ] create a rendezvous server in go to facilitate discovery of the different Samtala clients.
-- [ ] enable samtala core to do tcp hole punching to connect to the peers.
-- [ ] implement distributed persistance on samtala core.
+🚧 **This project is in the initial conceptual and learning phase. No functional code is available yet.** 🚧
 
-Innitialy I'll focus on get this zig core functionall afterwards a gui can be implemented.
+### Goals
 
-## Features
+1. Explore the implementation of a decentralized communication system
+2. Learn and apply Zig programming for systems development
+3. Experiment with distributed systems concepts
+4. Investigate modern encryption and privacy-preserving technologies
+5. Document the learning journey and challenges encountered
 
-- Decentralized, peer-to-peer chatrooms
-- End-to-end encryption using TLS and PGP
-- Centralized server for discovery and P2P connection establishment
-- Direct P2P transfer for all messages and files
-- Separate core executable and GUI components
+### Potential Features (Subject to Change)
 
-## Architecture
+- Peer-to-peer messaging
+- End-to-end encryption
+- Decentralized chat rooms
+- User-controlled data storage
+- Cross-platform support
 
-Samtala consists of two main components:
+### Technologies Under Consideration
 
-1. **Core Executable**: Runs in the background and handles:
-   - Encryption
-   - Data replication
-   - Storage
-   - Consensus logic
+- **Core Service**: Zig
+- **User Interface**: Rust (tentative)
+- **Networking**: Custom UDP protocol, WebRTC
+- **Data Synchronization**: CRDTs, Viewstamped Replication
+- **Discovery**: Distributed Hash Tables (DHT)
 
-2. **GUI**: User interface that communicates with the core via named pipes
+### Current Focus
 
-Each chatroom functions as its own P2P cluster, ensuring privacy and scalability.
+The current focus is on research, learning, and initial design. No substantial code has been written yet.
 
-## How It Works
+### Contribution
 
-1. Users connect to a central server for initial discovery and P2P connection establishment.
-2. Once connected, all communication (messages, files, etc.) occurs directly between peers.
-3. The core executable manages all backend operations, while the GUI provides a user-friendly interface.
+While this is primarily a personal learning project, I'm open to discussions, suggestions, and knowledge sharing. Feel free to open issues for discussions or questions.
+
+### Development Pace
+
+⚠️ **Important Note**: This is a side project developed in my spare time alongside full-time employment. Updates and progress may be infrequent and inconsistent.
+
+### Follow the Journey
+
+I'll be documenting my learning process and any progress through:
+
+- Updates to this README
+- [Blog posts](https://codingpaw.dev/tags/samtala/)
+- Occasional code commits as the project progresses
